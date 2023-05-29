@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TURISMO EN BUENOS AIRES</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="fondo">
+    <header>
+        <!-- LOGO -->
+        <img src="../../public/logo/LOGO.avif" class="logo" alt="logotipo">
+        <!-- TITULO -->
+        <h1>Turismo en BS.AS</h1> 
+        <nav class="menu navbar navbar-expand-lg bg-body-tertiary">
+            <div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item" >
+                            <a class="nav-link" href="../pages/actividades.html">Actividades</a>
+                        </li>
+                        <li class="nav-item" >
+                            <a class="nav-link" href="../pages/alojamiento.html">Alojamiento</a>
+                        </li>
+                        <li class="nav-item" >
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item" >
+                            <a class="nav-link" href="../pages/sobre_nosotros.html">Sobre Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>        
+        </nav>           
+    </header>
+    <section class="submenu">
+        <div class=" container">
+            <div class="col-3">
+                <section class="busqueda">
+                    <label for="entrada" class="entrada" >fecha de entrada</label>
+                    <input type="date" name="entada">
+                </section> 
+                <section class="busqueda">
+                    <label for="salida" class="salida" >fecha de salida</label>
+                    <input type="date" name="salida">
+                </section>   
+                <section class="busqueda">
+                    <label for="cantidad" class="cantidad" >¿para cuantos?</label>
+                    <input type="number" name="cantidad">
+                </section>
+                <section class="busqueda">
+                    <label for="donde" class="donde" >ubicacion</label>
+                    <input type="text" name="donde">            
+                </section>
+                <div class="d-grid gap-2">
+                    <button class="formulario btn btn-danger" type="button">Buscar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="cuerpo">
+        <h2>Te mostramos algunos de los mejores hoteles</h2>
+        <div class="container">
+            <div class="row">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../../public/images/hotel1.jpg" class="hotel card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title">Hotel centuria</h2>
+                            <p class="card-text">Todo el mundo necesita un sitio donde reposar cuando está cansado. 
+                            Para aquellos que visiten Buenos Aires, Centuria Hotel Buenos Aires es una magnífica elección para descansar</p>
+                            <a href="https://hotelcenturia.com/buenosaires/" target="_blank"class=" btn btn-danger">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../../public/images/hotel2.jpg" class="hotel card-img-top" alt="...">
+                        <div class="card-body">
+                        <h2 class="card-title">Unique</h2>
+                        <p class="card-text">Cosmopolita y multifacético, Unique Executive Central condensa la esencia de la emocionante urbe porteña,
+                        en un marco elegante, moderno y confortable, a metros del Obelisco y de la Av. Corrientes . 
+                        </p>
+                        <a href="https://hotels-unique.com/" class="btn btn-danger" target="_blank" >Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../../public/images/hotel3.jpg" class="hotel card-img-top" alt="...">
+                        <div class="card-body">
+                        <h2 class="card-title">Patios de Recoleta</h2>
+                        <p class="card-text">Estacionamiento, Piscina, Rooftop Bar, Wi-Fi, Restaurante, Gimnasio y Piscina. Desayuno Buffet y Habitaciones de Primer Nivel. Disfrutá de Una Estadía Única. 
+                        ¡Visitanos! Restaurante Disponible. Reserva Online. Ofertas Disponibles.
+                        </p>
+                        <a href="https://www.patiosderecoleta.com/" class="btn btn-danger" target="_blank">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../../public/images/hotel4.jpg" class="hotel card-img-top" alt="...">
+                        <div class="card-body">
+                        <h2 class="card-title">Circus</h2>
+                        <p class="card-text">Las habitaciones de los huéspedes incluyen televisor de pantalla plana y aire acondicionado, y  Circus Hotel & Casino te ayuda a que estés comodo
+                            Calificación: 3.5</p>
+                        <a href="http://hostelcircus.com/" class="btn btn-danger" target="_blank">Go somewhere</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="../../public/images/insta.jpg" alt="">
+        <img src="../../public/images/face.jpg" alt="">
+        <img src="../../public/images/twiter.jpg" alt="">
+        <p>
+            TURISMO EN BUENOS AIRES.com forma parte de TURISMO EN BUENOS AIRES  Inc., líder nacionalen viajes online y servicios relacionados.</p>
+    </footer>
+</body>
+</html>
