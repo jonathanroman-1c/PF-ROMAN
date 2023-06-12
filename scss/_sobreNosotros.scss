@@ -1,0 +1,44 @@
+@import 'variables';
+@import 'contacto';
+    .introduccion{
+        @include estilo($color-oscuro,10px);
+        color: wheat;
+        padding: 10px;
+    }
+    .img-perfil{
+        /**/
+        @include size(215px,180px);
+        /**/
+        padding-bottom: 5px;
+    }
+    .contenedor{
+        display: grid;
+        justify-items: center;
+        /*/*/
+        @extend .preguntas;
+        /**/
+    }
+    .precentacion{
+        color: wheat;
+        padding: 8px;
+        display: grid;
+        justify-items: center;
+    }
+    .texto{
+        width: 300px;
+    }
+    @media (max-width: 500px){
+        .precentacion{
+            display:none;
+        }
+        .img-perfil{
+            /**/
+            @include size(160px,150px);
+            margin-bottom: 10px;
+            /**/
+            padding-bottom: 5px;
+        }
+        .texto{
+            width: 250px;
+        }
+    }

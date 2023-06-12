@@ -1,0 +1,33 @@
+    @import 'variables';
+    @import 'contacto';
+    header{   
+            grid-area: header;
+            /**/    
+            @extend .preguntas;
+            /**/
+            @include centradoVertical();
+            /**/
+            justify-content: space-between;
+            .logo{
+                /**/
+                @include size(80px,80px);
+                /**/
+            }
+            h1{
+                font-size: 25px;
+            }
+            .menu{
+                /**/
+                @include centradoVertical();
+                /**/
+                .nav-item{
+                    &:hover{
+                        transform: scale(1.2);
+                        background-color: rgb(99, 98, 66);
+                        a{
+                            color: rgb(255, 255, 255);     
+                        }    
+                    }
+                }
+            }
+        }

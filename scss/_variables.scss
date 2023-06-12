@@ -1,0 +1,17 @@
+/*variables*/
+$color-oscuro: #292828;
+$color-bordes:solid 5px #ffc107;
+$color-form: rgb(72, 69, 69);
+@mixin size($width,$height){
+    width: $width;
+    height: $height;
+}
+@mixin estilo($color,$espacio){
+    background-color: $color; 
+    margin: $espacio;
+}
+@mixin centradoVertical(){
+    display: flex;
+    align-items: center;
+}
+$boton: 2px 2px 10px rgb(255, 255, 255);

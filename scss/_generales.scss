@@ -1,0 +1,68 @@
+@import 'variables';
+@import 'footer';
+@import 'header';
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+    .fondo {
+        background-color: $color-oscuro;
+        display: grid;
+        grid-template-areas: 
+        "header header  header header header"
+        ". section section section ."
+        "main main main main main"
+        "footer footer footer  footer footer  ";
+        
+    }
+    .submenu{
+        grid-area: section;
+        @include estilo(white,0px);
+        padding: 5px;
+    }
+    .cuerpo{
+        grid-area: main;
+        @include estilo($color-oscuro,0px);
+    }
+    a{
+        text-decoration: none;
+    }
+    li{
+        list-style: none; 
+    }
+    h2{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    button{
+        box-shadow: $boton;
+    }
+    @media (min-width: 500px){
+        .cultura img{
+            /**/
+            @include size(160px,120px);
+            /**/
+            margin: 10px;
+        }
+        .logo{
+            /**/
+            @include size(150px,150px);
+        }
+        h1{
+            font-size: 50px;
+        }
+        a{
+            margin: 10px;
+            font-size: 25px;
+        }
+        p{
+            font-size: 20px;
+        }
+        h3{
+        margin: 50px 50px 0px 10px;
+        font-size: 50px;
+        }       
+    }

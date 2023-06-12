@@ -1,0 +1,13 @@
+@import 'variables';
+@media (max-width: 500px){
+    .cultura{
+        display: none;
+    }
+}
+.lugares{
+    @extend .preguntas;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding: 5px;
+}

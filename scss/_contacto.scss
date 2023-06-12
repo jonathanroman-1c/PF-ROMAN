@@ -1,0 +1,31 @@
+    @import 'variables';
+    .formulario{
+        margin: 10px;
+        font-size: 20px;
+    }
+    .duda{
+        @extend .formulario;
+        padding: 5px;
+    }
+    .mensaje{
+        resize: none;
+    }
+    .preguntas{
+        background-color: white;
+        border-top:  $color-bordes;
+        border-right:solid 8px $color-oscuro;
+        border-bottom:  $color-bordes;
+        border-left:solid 8px $color-oscuro;
+    }
+    .subtitulo{
+        @extend .preguntas;
+        padding: 10px;
+
+    }
+    .contacto{
+        background-color: #a09393; 
+    }
+    #cuerpo{
+        color: rgb(255, 255, 255);
+        padding: 10px;
+    }

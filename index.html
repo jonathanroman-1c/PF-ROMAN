@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, Turismo, Argentina, principal">
+    <meta name="descripcion" content="somos una pequeña empresa de turismo en Buenos Aires">
     <title>TURISMO EN BUENOS AIRES</title>
-    <link rel="stylesheet" href="./src/css/bootstrap.min.css">
-    <script src="./src/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body class="fondo">
     <!-- ENCABEZADO -->
     <header>
-        <img src="./public/logo/LOGO.avif" class="logo" alt="logotipo">
+        <img src="./images/logo/LOGO.avif" class="logo" alt="logotipo">
         <!-- TITULO -->
         <h1>Turismo en BS.AS</h1> 
         <nav class="menu navbar navbar-expand-lg bg-body-tertiary">
@@ -28,16 +30,16 @@
                             <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./src/pages/actividades.html">Actividades</a>
+                            <a class="nav-link" href="./pages/actividades.html">Actividades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./src/pages/alojamiento.html">Alojamiento</a>
+                            <a class="nav-link" href="./pages/alojamiento.html">Alojamiento</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./src/pages/contacto.html">Contacto</a>
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./src/pages/sobre_nosotros.html">Sobre Nosotros</a>
+                            <a class="nav-link" href="./pages/sobre_nosotros.html">Sobre Nosotros</a>
                         </li>
 
                     </ul>
@@ -45,11 +47,11 @@
             </div>
         </nav>
     </header>
-        <section class="submenu container">
+        <section class="submenu container-fluid">
             <!-- INTRODUCCION -->
             <div class="row">
                 <div class="col-xs-12 col-lg-6 col-xl-4">
-                    <img src="./public/images/campeon.jpg"  class="rounded-circle" alt="campeon del mundo">                    
+                    <img src="./images/campeon.jpg"  class="rounded-circle" alt="campeon del mundo">                    
                 </div>
                 <div class="col-xs-12 col-lg-6 col-xl-3">
                     <p>
@@ -61,22 +63,22 @@
                     </p>
                 </div>
                 <div class="cultura col-sm-12 col-xl-4">
-                    <img  src="./public/images/tango.jpg" alt="">
-                    <img  src="./public/images/asado.jpg" alt="">
-                    <img  src="./public/images/empanada.jpg" alt="">
-                    <img  src="./public/images/mate.jpg" alt="">
+                    <img  src="./images/tango.jpg" alt="">
+                    <img  src="./images/asado.jpg" alt="">
+                    <img  src="./images/empanada.jpg" alt="">
+                    <img  src="./images/mate.jpg" alt="">
                 </div>
             </div>
         </section>
     <!-- PRINCIPAL -->
     <main class="cuerpo">  
         <!-- LISTA DE LUGARES -->
-        <ol>
+        <ol class="container">
                 <!-- OBELISCO -->              
-                <li class="container">
-                    <h2>Obelisco</h2>
+                <li class="lugares">
+                    <h2 class="lugares">Obelisco</h2>
                     <div class="row">
-                        <img src="./public/images/obelisco.jpg" class="col-xs-12 col-sm-5" alt="obelisco">
+                        <img src="./images/obelisco.jpg" class="col-xs-12 col-sm-5" alt="obelisco">
                         <p class="col-xs-12 col-sm-6" >El Obelisco es el mayor emblema de la Ciudad de Buenos Aires y de sus habitantes, como lo son la 
                             Torre Eiffel respecto a París o la Estatua de la Libertad en relación a Nueva York. Fue inaugurado
                             el 23 de mayo de 1936 como homenaje al cuarto centenario de la primera fundación de Buenos Aires. 
@@ -86,10 +88,10 @@
                     </div>
                 </li>
                 <!-- MONUMENTAL -->
-                <li class="container">
-                    <h2>Monumental</h2>
+                <li class="lugares">
+                    <h2 class="lugares">Monumental</h2>
                     <div class="row">
-                        <img src="./public/images/munumental.jpg" class="col-xs-12 col-sm-5" alt="monumental">
+                        <img src="./images/munumental.jpg" class="col-xs-12 col-sm-5" alt="monumental">
                         <p class="col-xs-12 col-sm-6">Veni a conocer el "Nuevo Monumental" la cancha mas grande de sudamerica. Visitantes de todo el planeta viajan 
                             miles de kilómetros sólo para tocar sus muros, como si se tratase de un templo. Pero ello no sorprende: después 
                             de todo, el Monumental es una de las mecas del fútbol mundial y en sus gradas se reúnen todas las semanas, desde
@@ -97,10 +99,10 @@
                     </div>             
                 </li>
                 <!-- LA BOCA -->
-                <li class="container">
-                    <h2>La Boca</h2>
+                <li class=" lugares">
+                    <h2 class="lugares">La Boca</h2>
                     <div class="row">
-                        <img src="./public/images/boca3.jpg" class="col-xs-12 col-sm-5" alt="caminito la boca">
+                        <img src="./images/boca3.jpg" class="col-xs-12 col-sm-5" alt="caminito la boca">
                         <p class="col-xs-12 col-sm-6">
                             La callecita de La Boca está entre los 10 lugares más fotografiados del mundo, según estadísticas de Google Maps
                             -detrás del Museo Guggenheim de Nueva York, de Piazza Spagna en Roma y de otras 6 maravillas-. Así que es lógico
@@ -110,10 +112,10 @@
                     </div>
                 </li>
                 <!-- PUERTO MADERO -->
-                <li class="container">
-                    <h2>Puerto Madero</h2>
+                <li class=" lugares">
+                    <h2 class="lugares">Puerto Madero</h2>
                     <div class="row">
-                        <img src="./public/images/puertoMadero.jpg" class="col-xs-12 col-sm-5" alt="">
+                        <img src="./images/puertoMadero.jpg" class="col-xs-12 col-sm-5" alt="">
                         <p class="col-xs-12 col-sm-6">Desde los edificios de ladrillo rojo renovados y las grúas del puerto hasta los modernos rascacielos y los lujosos 
                         bloques de apartamentos, Puerto Madero combina a la perfección lo antiguo y lo moderno. Cruzando el río, 
                         flanqueado por rascacielos, encontrarás preciosos parques y calles tranquilas que hacen de este barrio un destino único
@@ -124,10 +126,10 @@
                     </div>
                 </li>
                 <!-- PLAZA DE MAYO -->
-                <li class="container">
-                    <h2>Plaza de Mayo</h2>
+                <li class=" lugares">
+                    <h2 class="lugares">Plaza de Mayo</h2>
                     <div class="row" >
-                        <img src="./public/images/plazaMayo.jpg"  class="col-xs-12 col-sm-5"alt="">
+                        <img src="./images/plazaMayo.jpg"  class="col-xs-12 col-sm-5"alt="">
                         <p class="col-xs-12 col-sm-6">La Plaza de Mayo es la más antigua de Buenos Aires y escenario de todos los acontecimientos políticos más importantes 
                         de la historia argentina, a excepción de la Declaración de la Independencia. Su nombre es en homenaje a la Revolución 
                         del 25 de Mayo de 1810, que ocurrió en esta misma plaza y que dio inicio a la gesta de la Independencia argentina, a 
@@ -135,10 +137,10 @@
                     </div>
                 </li>
                 <!-- ROSEDAL -->
-                <li class="container">
-                    <h2 class="col-12">El Rosedal</h2>
+                <li class=" lugares">
+                    <h2 class="lugares">El Rosedal</h2>
                     <div class="row">
-                        <img src="./public/images/rosedal.jpg"  class="col-xs-12 col-sm-5"alt="">
+                        <img src="./images/rosedal.jpg"  class="col-xs-12 col-sm-5"alt="">
                         <p class="col-xs-12 col-sm-6">El barrio de Palermo ofrece a la Ciudad de Buenos Aires un gran pulmón verde entre tanto cemento. Se trata del Parque
                         Tres de Febrero, también llamado Bosques de Palermo, conformado por una variada arboleda, lagos artificiales y rosedales. 
                         Acá nos referiremos al Rosedal de Palermo.El Rosedal de Palermo florecen miles de rosas, dándole al lugar unos hermosos 
@@ -147,10 +149,10 @@
                     </div>
                 </li>
                 <!-- TEATRO COLON -->
-                <li class="container">
-                    <h2>Teatro Colon</h2>
+                <li class=" lugares">
+                    <h2 class="lugares">Teatro Colon</h2>
                     <div class="row">
-                        <img src="./public/images/teatroColon.jpg" class="col-xs-12 col-sm-5" alt="">
+                        <img src="./images/teatroColon.jpg" class="col-xs-12 col-sm-5" alt="">
                         <p class="col-xs-12 col-sm-6">El Teatro Colón de Buenos Aires es una de las salas de ópera más importantes del mundo. Su rico y prestigioso historial 
                         y las excepcionales condiciones acústicas y arquitectónicas de su edificio lo colocan al nivel de teatros como la Scala
                         de Milán, la Ópera de París, la Ópera de Viena, el Covent Garden de Londres y el Metropolitan de Nueva York</p>
@@ -159,9 +161,9 @@
         </ol>
     </main>
     <footer>
-        <img src="./public/images/insta.jpg" alt="">
-        <img src="./public/images/face.jpg" alt="">
-        <img src="./public/images/twiter.jpg" alt="">
+        <img src="./images/logo/twiter.jpg" alt="">
+        <img src="./images/logo/face.jpg" alt="">
+        <img src="./images/logo/insta.jpg" alt="">
         <p>
             TURISMO EN BUENOS AIRES.com forma parte de TURISMO EN BUENOS AIRES  Inc., líder nacionalen viajes online y servicios relacionados.</p>
     </footer>
